@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo List</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	<style type="text/css">
+		#todoListDiv {
+			margin: 30px auto;
+		}
+	</style>
+</head>
+<body>
+	<div>
+
+		<h1>Todo List</h1>
+
+		<div>
+			<button onclick="handlers.toggleAll();">Toggle All</button>
+		</div>
+
+		<div>
+			<input id="addTodoTextInput" type="text" name="">
+			<button onclick="handlers.addTodo()">Add</button>
+		</div>
+
+		<div>
+			<button onclick="handlers.changeTodo()">Change Todo</button>
+			<input id="changeTodoPositionInput" type="number">
+			<input id="changeTodoTextInput" type="text">
+		</div>
+
+		<div id="todoListDiv">
+			<ul>
+			</ul>
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="todolist.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "todo-package",
+  "version": "1.0.0",
+  "description": "Simple todo list app",
+  "main": "todolist.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoladango/todo-package.git"
+  },
+  "author": "Dan Branstrator <yoladango@gmail.com> (http://www.danbranstrator.com)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/yoladango/todo-package/issues"
+  },
+  "homepage": "https://github.com/yoladango/todo-package#readme",
+  "devDependencies": {
+    "eslint": "^3.18.0"
+  }
+}
