@@ -13,30 +13,36 @@
 	</style>
 </head>
 <body>
-	<div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				
 
-		<h1>Todo List</h1>
+				<h1>Todo List</h1>
 
-		<div>
-			<button onclick="handlers.toggleAll();">Toggle All</button>
+				<div>
+					<button onclick="handlers.toggleAll();">Toggle All</button>
+				</div>
+
+				<div>
+					<input id="addTodoTextInput" type="text" name="">
+					<button onclick="handlers.addTodo()">Add</button>
+				</div>
+
+				<div>
+					<button onclick="handlers.changeTodo()">Change Todo</button>
+					<input id="changeTodoPositionInput" type="number">
+					<input id="changeTodoTextInput" type="text">
+				</div>
+
+				<div id="todoListDiv">
+					<ul>
+					</ul>
+				</div>
+
+			</div>
 		</div>
-
-		<div>
-			<input id="addTodoTextInput" type="text" name="">
-			<button onclick="handlers.addTodo()">Add</button>
-		</div>
-
-		<div>
-			<button onclick="handlers.changeTodo()">Change Todo</button>
-			<input id="changeTodoPositionInput" type="number">
-			<input id="changeTodoTextInput" type="text">
-		</div>
-
-		<div id="todoListDiv">
-			<ul>
-			</ul>
-		</div>
-
 	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
